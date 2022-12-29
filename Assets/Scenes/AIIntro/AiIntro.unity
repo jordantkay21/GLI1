@@ -617,7 +617,7 @@ GameObject:
   - component: {fileID: 1639516941}
   - component: {fileID: 1639516940}
   - component: {fileID: 1639516939}
-  - component: {fileID: 1639516938}
+  - component: {fileID: 1639516944}
   m_Layer: 0
   m_Name: AI
   m_TagString: Untagged
@@ -625,25 +625,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1639516938
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1639516937}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1e9eb7d2626379e41983aa564325025a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _wayPoints:
-  - {fileID: 986767747}
-  - {fileID: 1426442032}
-  - {fileID: 1595327824}
-  - {fileID: 772801267}
-  - {fileID: 424599180}
-  - {fileID: 1654460547}
 --- !u!195 &1639516939
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -654,7 +635,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5000001
-  m_Speed: 3.5
+  m_Speed: 5
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -745,6 +726,26 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1639516944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1639516937}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57b35f7b4d673a34f927ef48669f4912, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _wayPoints:
+  - {fileID: 986767747}
+  - {fileID: 1426442032}
+  - {fileID: 1595327824}
+  - {fileID: 772801267}
+  - {fileID: 424599180}
+  - {fileID: 1654460547}
+  _currentPoint: 0
 --- !u!4 &1654460547 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5100339794215315015, guid: 426cf52a0dbcea441b5b8c527ca93fb7, type: 3}

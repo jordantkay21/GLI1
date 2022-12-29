@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class AI : MonoBehaviour
+public class AIRandomWayPoints : MonoBehaviour
 {
     [SerializeField]
     private List<Transform> _wayPoints;
@@ -25,11 +25,5 @@ public class AI : MonoBehaviour
         {
             _agent.destination = _wayPoints[_randomTarget].position;
         }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }
